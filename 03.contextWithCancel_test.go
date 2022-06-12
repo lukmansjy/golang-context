@@ -60,7 +60,7 @@ func CreateCounter(ctx context.Context) chan int {
 	return destination
 }
 
-func TestContextWith(t *testing.T) {
+func TestContextWithCancel(t *testing.T) {
 	fmt.Println("Total Goroutine:", runtime.NumGoroutine())
 
 	parent := context.Background()
